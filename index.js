@@ -1,0 +1,1 @@
+module.exports = require('dist/bot/js/main.js')

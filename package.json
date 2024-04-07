@@ -1,15 +1,15 @@
 {
   "name": "@vinuderiv/bot-trade-engine",
-  "version": "1.0.0",
-  "main": "dist/js",
+  "version": "1.0.7",
+  "main": "dist/bot/js.main.js",
   "dependencies": {
     "@datadog/browser-logs": "^5.11.0",
     "@deriv/deriv-api": "^1.0.15",
     "@deriv/js-interpreter": "^3.0.0",
     "binary-utils": "^4.25.0",
     "immutable": "^5.0.0-beta.5",
-    "redux": "^5.0.1",
-    "redux-thunk": "^3.1.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.2.0",
     "webpack": "^5.81.0"
   },
   "devDependencies": {

@@ -5,11 +5,12 @@ const IS_RELEASE =
 
 const output = {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bot/js/bot-trade-engine-main.[contenthash].js',
+    filename: 'bot/js/[name].js',
     chunkFilename: 'bot/js/bot.[name].[contenthash].js',
     libraryExport: 'default',
-    library: '@deriv/bot-trade-engine',
+    library: '@vinuderiv/bot-trade-engine',
     libraryTarget: 'umd',
+    clean: true,
 };
 
 module.exports = function (env) {
@@ -17,11 +18,7 @@ module.exports = function (env) {
 
     return {
         entry: {
-            interface: './tradeEngine/interface/index.js',
-            trade: './tradeEngine/trade/index.js',
-            utils: './tradeEngine/utils/index.js',
-            constants: './constants/index.js',
-            api: './api/index.js',
+            main: './main.js',
         },
         output: {
             ...output,

@@ -17,6 +17,8 @@ export default Engine =>
 
                     balance_string = getFormattedText(b, currency);
 
+                    api_base.account_balance = data.balance.accounts;
+
                     if (this.accountInfo) info({ accountID: this.accountInfo.loginid, balance: balance_string });
                 }
             });
@@ -25,10 +27,13 @@ export default Engine =>
 
         // eslint-disable-next-line class-methods-use-this
         getBalance(type) {
-            // const { client } = DBotStore.instance;
-            const balance =  0;
+            const balance = api_base?.account_balance[`${api_base.account_id}`].balance || 0;
 
-            balance_string = getFormattedText(balance, 'USD', false);
+            balance_string = getFormattedText(
+                balance,
+                api_base?.account_balance[`${api_base.account_id}`].currency || 'USD',
+                false
+            );
             return type === 'STR' ? balance_string : balance;
         }
     };
