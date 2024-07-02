@@ -1,7 +1,7 @@
-import { localize } from '@deriv/translations';
 import getCandleInterface from './CandleInterface';
 import getIndicatorsInterface from './IndicatorsInterface';
 import getMiscInterface from './MiscInterface';
+import { localize } from '@deriv/translations';
 
 const getToolsInterface = tradeEngine => {
     return {

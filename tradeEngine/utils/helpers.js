@@ -1,7 +1,7 @@
-import { formatTime, findValueByKeyRecursively, getRoundedNumber, isEmptyObject } from '@deriv/shared';
-import { localize } from '@deriv/translations';
+import { formatTime, findValueByKeyRecursively, getRoundedNumber, isEmptyObject } from '../../shared';
 import { error as logError } from './broadcast';
 import { observer as globalObserver } from './observer';
+import { localize } from '@deriv/translations';
 
 export const tradeOptionToProposal = (trade_option, purchase_reference) =>
     trade_option.contractTypes.map(type => {

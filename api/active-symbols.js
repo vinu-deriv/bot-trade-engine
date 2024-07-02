@@ -1,6 +1,6 @@
-import { localize } from '@deriv/translations';
-import PendingPromise from './../tradeEngine/utils/pending-promise.js';
-import { config } from './../constants/config.js';
+import PendingPromise from "../tradeEngine/utils/pending-promise.js";
+import { config } from "../constants/config.js";
+import { localize } from "@deriv/translations";
 
 export default class ActiveSymbols {
     constructor(ws, trading_times) {

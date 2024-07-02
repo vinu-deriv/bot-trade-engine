@@ -56,9 +56,8 @@ module.exports = function (env) {
         externals: [
             {
                 '@babel/polyfill': '@babel/polyfill',
-                '@deriv/shared': '@deriv/shared',
                 '@deriv/translations': '@deriv/translations',
-                '@deriv/indicators': '@deriv/indicators'
+                '@deriv/indicators': '@deriv/indicators',
             },
             /^@deriv\/shared\/.+$/,
             /^@deriv\/translations\/.+$/,

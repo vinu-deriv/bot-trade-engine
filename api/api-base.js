@@ -1,4 +1,4 @@
-import { observer as globalObserver } from './../tradeEngine/utils/observer';
+import { observer as globalObserver } from '../tradeEngine/utils/observer';
 import { doUntilDone, socket_state } from '../tradeEngine/utils/helpers';
 import { generateDerivApiInstance, getLoginId, getToken } from './appId';
 

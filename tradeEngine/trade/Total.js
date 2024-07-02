@@ -1,9 +1,9 @@
-import { getRoundedNumber } from '@deriv/shared';
-import { localize } from '@deriv/translations';
+import { getRoundedNumber } from '../../shared';
 import { info, log } from '../utils/broadcast';
-import { createError } from './../utils/error';
-import { observer as globalObserver } from './../utils/observer';
+import { createError } from '../utils/error';
+import { observer as globalObserver } from '../utils/observer';
 import { log_types } from '../../constants/messages';
+import { localize } from '@deriv/translations';
 
 const skeleton = {
     totalProfit: 0,

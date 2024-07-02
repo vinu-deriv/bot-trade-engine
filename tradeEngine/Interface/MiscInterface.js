@@ -1,6 +1,6 @@
-import { localize } from '@deriv/translations';
 import { notify } from '../utils/broadcast';
-import { observer as globalObserver } from './../utils/observer';
+import { observer as globalObserver } from "../utils/observer";
+import { localize } from '@deriv/translations';
 
 const getMiscInterface = tradeEngine => {
     return {
